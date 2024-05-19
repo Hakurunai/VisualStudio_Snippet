@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Header Guard</Title>
+      <Shortcut>ifndef</Shortcut>
+      <Description>Adds include guards to a C/C++ header file.</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>FileName</ID>
+          <ToolTip>Enter the name of the file</ToolTip>
+          <Default>FILENAME</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp"><![CDATA[#ifndef $FileName$__H
+#define $FileName$__H
+
+
+
+#endif // $FileName$__H]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Region Block</Title>
+      <Shortcut>region</Shortcut>
+      <Description>Adds a #pragma region block with a custom name</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>RegionName</ID>
+          <ToolTip>Enter the name of the region</ToolTip>
+          <Default>REGION</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp"><![CDATA[
+#pragma region $RegionName$
+
+#pragma endregion $RegionName$
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
